@@ -56,10 +56,12 @@
         android:layout_marginStart="120dp"
         android:layout_marginTop="20dp"
         android:layout_marginEnd="160dp"
+        android:onClick="XuLyCong"
         android:text="Tính tổng"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/edtB" />
+        app:layout_constraintTop_toBottomOf="@+id/edtB"
+        tools:ignore="OnClick" />
 
     <TextView
         android:id="@+id/textView3"
@@ -72,7 +74,7 @@
         app:layout_constraintTop_toBottomOf="@+id/btnCong" />
 
     <EditText
-        android:id="@+id/editTextNumber2"
+        android:id="@+id/edtKQ"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="4dp"
