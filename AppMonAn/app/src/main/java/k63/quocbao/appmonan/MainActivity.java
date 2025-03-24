@@ -4,6 +4,7 @@ import android.annotation.SuppressLint;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ListView;
 import android.widget.Toast;
 
 import androidx.activity.EdgeToEdge;
@@ -12,23 +13,20 @@ import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
+import java.util.ArrayList;
+
 public class MainActivity extends AppCompatActivity {
-    Button btnOk;
-    @SuppressLint("MissingInflatedId")
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        EdgeToEdge.enable(this);
         setContentView(R.layout.activity_main);
-
-        btnOk = findViewById(R.id.ok);
-
-        btnOk.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Toast.makeText(MainActivity.this, "chao xin", Toast.LENGTH_SHORT).show();
-            }
-        });
+        // Tim listview
+        ListView lsDSMonAn = (ListView) findViewById(R.id.lvDSMonAn);
+        // chuan bi nguon du lieu
+        ArrayList<MonAn> dsMonAn = new ArrayList<MonAn>();
+        MonAn m1 new MonAn("Com Tam Suon", 25000,"Mo ta o day", R.drawable.cts);
+        
 
     }
 

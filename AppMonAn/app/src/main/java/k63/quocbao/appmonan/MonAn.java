@@ -13,5 +13,37 @@ public class MonAn {
         this.MoTa = moTa;
         this.idAnhminhhoa = idAnhminhhoa;
     }
+    // cac getter va setter
+    public String getTenMonAn() {
+        return tenMonAn;
+    }
+
+    public void setTenMonAn(String tenMonAn) {
+        this.tenMonAn = tenMonAn;
+    }
+
+    public double getDonGia() {
+        return DonGia;
+    }
+
+    public void setDonGia(double donGia) {
+        DonGia = donGia;
+    }
+
+    public String getMoTa() {
+        return MoTa;
+    }
+
+    public void setMoTa(String moTa) {
+        MoTa = moTa;
+    }
+
+    public int getIdAnhminhhoa() {
+        return idAnhminhhoa;
+    }
+
+    public void setIdAnhminhhoa(int idAnhminhhoa) {
+        this.idAnhminhhoa = idAnhminhhoa;
+    }
 }
 
