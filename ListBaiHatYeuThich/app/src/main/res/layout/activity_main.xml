@@ -13,9 +13,10 @@
         android:gravity="center"
         android:textSize="16dp"
         android:text="Bai hat yeu thich cua toi"/>
+
     <ListView
+        android:id="@+id/lvDSbaihat"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/lvDSbaihat"/>
+        android:layout_height="wrap_content" />
 
 </LinearLayout>
