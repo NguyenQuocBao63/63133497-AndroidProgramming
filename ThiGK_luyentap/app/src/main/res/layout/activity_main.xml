@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/btnCau1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Câu 1: Tính tổng" />
+
+    <Button
+        android:id="@+id/btnCau2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Câu 2: Danh sách ListView"
+        android:layout_marginTop="10dp" />
+
+    <Button
+        android:id="@+id/btnCau3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Câu 3: Danh sách RecyclerView"
+        android:layout_marginTop="10dp" />
+
+    <Button
+        android:id="@+id/btnCau4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Câu 4: Thông tin cá nhân"
+        android:layout_marginTop="10dp" />
+
+</LinearLayout>

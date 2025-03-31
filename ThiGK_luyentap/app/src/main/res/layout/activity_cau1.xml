@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".ActivityCau1">
+
+    <EditText
+        android:id="@+id/inputA"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nhập số A"
+        android:inputType="number" />
+
+    <EditText
+        android:id="@+id/inputB"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nhập số B"
+        android:inputType="number"
+        android:layout_marginTop="8dp" />
+
+    <Button
+        android:id="@+id/btnSum"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Tính Tổng a+b"
+        android:layout_marginTop="8dp" />
+
+    <TextView
+        android:id="@+id/txtResult"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Kết quả: "
+        android:textSize="18sp"
+        android:layout_marginTop="8dp" />
+
+
+</LinearLayout>
