@@ -18,11 +18,15 @@ public class ActivityCau3 extends AppCompatActivity {
         RecyclerView recyclerView = findViewById(R.id.recyclerView);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
 
-        ArrayList<String> itemList = new ArrayList<>();
-        itemList.add("Item 1");
-        itemList.add("Item 2");
-        itemList.add("Item 3");
-        itemList.add("Item 4");
-        itemList.add("Item 5");
+        ArrayList<String> foodList = new ArrayList<>();
+        foodList.add("Phở bò");
+        foodList.add("Bún chả");
+        foodList.add("Cơm tấm");
+        foodList.add("Gỏi cuốn");
+        foodList.add("Bánh xèo");
+        foodList.add("Mì Quảng");
+        foodList.add("Bánh mì");
+        RecyclerViewAdapter adapter = new RecyclerViewAdapter(foodList);
+        recyclerView.setAdapter(adapter);
     }
 }

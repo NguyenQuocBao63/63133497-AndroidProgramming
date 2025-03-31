@@ -62,7 +62,7 @@
         android:id="@+id/txtID"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Số CMND: 123456789"
+        android:text="Số CCCD: 054203001797"
         android:textSize="18sp"
         android:layout_marginBottom="8dp" />
 

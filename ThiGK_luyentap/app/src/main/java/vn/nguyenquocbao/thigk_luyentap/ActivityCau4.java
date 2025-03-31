@@ -27,6 +27,6 @@ public class ActivityCau4 extends AppCompatActivity {
         txtJob.setText("Nghề nghiệp: Sinh Viên");
         txtAddress.setText("Địa chỉ liên hệ: 19 Đường Lang Liêu, P.Vĩnh Phước, TP.Nha Trang");
         txtPhone.setText("Số điện thoại: 093 533 0602");
-        txtID.setText("Số CMND: 123456789");
+        txtID.setText("Số CCCD: 054203001797");
     }
 }

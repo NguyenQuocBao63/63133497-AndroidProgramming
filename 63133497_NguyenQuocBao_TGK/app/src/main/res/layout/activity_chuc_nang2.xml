@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:gravity="center">
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/logontu"
+        android:contentDescription="Logo" />
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tính điểm trung bình môn học"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:padding="8dp" />
+
+    <EditText
+        android:id="@+id/edtQT"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nhập điểm quá trình (20%)"
+        android:inputType="numberDecimal" />
+
+    <EditText
+        android:id="@+id/edtGK"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nhập điểm giữa kỳ (30%)"
+        android:inputType="numberDecimal" />
+
+    <EditText
+        android:id="@+id/edtCK"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nhập điểm cuối kỳ (50%)"
+        android:inputType="numberDecimal" />
+
+    <Button
+        android:id="@+id/btnCalculate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tính điểm" />
+
+    <TextView
+        android:id="@+id/txtResult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Kết quả sẽ hiển thị ở đây"
+        android:textSize="18sp"
+        android:padding="8dp" />
+
+</LinearLayout>
