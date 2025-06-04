@@ -1,0 +1,50 @@
+# gradle/libs.versions.toml
+
+[versions]
+# ===== Phiên bản của các plugin Gradle =====
+# Đây là phiên bản của Android Gradle Plugin (AGP).
+# Kiểm tra version của AGP trong file build.gradle.kts (project level) hoặc qua build.gradle.kts (app level)
+androidGradlePlugin = "8.0.0" # <-- Thay đổi nếu bạn dùng phiên bản khác (ví dụ: "8.3.0", "8.4.0", v.v.)
+# Plugin Google Play Services (nếu bạn dùng Firebase hoặc các dịch vụ Google khác)
+googleServices = "4.4.1" # <-- Thay đổi nếu bạn dùng phiên bản khác (ví dụ: "4.3.15", v.v.)
+
+# ===== Phiên bản của các thư viện AndroidX (cơ bản) =====
+coreKtx = "1.12.0"
+appcompat = "1.6.1"
+material = "1.11.0"
+constraintlayout = "2.1.4"
+activity = "1.8.0"
+fragment = "1.6.0"
+
+# ===== Phiên bản của các thư viện kiểm thử =====
+junit = "4.13.2"
+extJunit = "1.1.5"
+espressoCore = "3.5.1"
+
+[libraries]
+# ===== Định nghĩa các thư viện AndroidX =====
+# Cấu trúc: [tên_sử_dụng_trong_code] = { group = "nhóm", name = "tên", version.ref = "biến_phiên_bản_ở_trên" }
+androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
+androidx-appcompat = { group = "androidx.appcompat", name = "appcompat", version.ref = "appcompat" }
+google-android-material = { group = "com.google.android.material", name = "material", version.ref = "material" }
+androidx-constraintlayout = { group = "androidx.constraintlayout", name = "constraintlayout", version.ref = "constraintlayout" }
+androidx-activity = { group = "androidx.activity", name = "activity", version.ref = "activity" }
+androidx-fragment = { group = "androidx.fragment", name = "fragment", version.ref = "fragment" }
+
+# ===== Định nghĩa các thư viện kiểm thử =====
+junit = { group = "junit", name = "junit", version.ref = "junit" }
+androidx-test-ext-junit = { group = "androidx.test.ext", name = "junit", version.ref = "extJunit" }
+androidx-test-espresso-core = { group = "androidx.test.espresso", name = "espresso-core", version.ref = "espressoCore" }
+
+# ===== Nếu bạn dùng Firebase hoặc các thư viện khác, thêm vào đây =====
+# Ví dụ: Firebase BOM (dùng để quản lý phiên bản các thư viện Firebase)
+# Bạn sẽ cần thay đổi version của nó thành phiên bản bạn muốn dùng
+# firebase-bom = { group = "com.google.firebase", name = "firebase-bom", version = "32.7.4" }
+
+[plugins]
+# ===== Định nghĩa các plugin Gradle =====
+# Cấu trúc: [tên_sử_dụng_trong_code] = { id = "id_của_plugin", version.ref = "biến_phiên_bản_ở_trên" }
+android-application = { id = "com.android.application", version.ref = "androidGradlePlugin" }
+google-gms-googleServices = { id = "com.google.gms.google-services", version.ref = "googleServices" }
+# Nếu bạn có mã Kotlin trong dự án (dù dự án chính là Java)
+# kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" } # Cần thêm versions.kotlin nếu dùng

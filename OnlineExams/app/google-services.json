@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "142915814284",
+    "project_id": "exams-online-63133497",
+    "storage_bucket": "exams-online-63133497.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:142915814284:android:d366488b50ba81c010cca9",
+        "android_client_info": {
+          "package_name": "vn.nguyenquocbao.onlineexams"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBHQdh71_EueDezoc4i1Bh1-46ItcN93gg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
